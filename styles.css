@@ -1,45 +1,70 @@
 
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
   background-color: #f4f4f4;
+  color: #222;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
+
 header {
   background-color: #000;
   color: #1e90ff;
   padding: 20px;
 }
+
 .logo {
-  height: 64px;
-}
-.tagline {
-  font-size: 1.2em;
-  color: #ccc;
-}
-main {
-  padding: 40px;
-}
-.logo {
-  height: 64px;
+  height: 80px;
   margin-bottom: 10px;
 }
-section {
-  background-color: white;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-button, a {
-  background-color: #1e90ff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
+
+.tagline {
+  color: #ccc;
+  font-size: 1.2em;
 }
 
+.hero {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.features {
+  background-color: #eef2f5;
+  padding: 40px 20px;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+.how-it-works {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+.cta {
+  background-color: #1e90ff;
+  color: white;
+  padding: 40px 20px;
+}
+
+footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 20px;
+  font-size: 0.9em;
+}
