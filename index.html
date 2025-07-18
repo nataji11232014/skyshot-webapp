@@ -1,44 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <main>
-    <section class="hero">
-    <h2>Track Every Shot. Elevate Your Game.</h2>
-    <p>SkyShot helps athletes and coaches measure shot arc, consistency, and improvement in real time.</p>
-    <a href="#login" class="cta-button">Get Started</a>
-  </section>
-  </main>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkyShot</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.ico" />
 </head>
 <body>
+  <img src="assets/logo.png" alt="SkyShot Logo" style="height: 100px; margin: 20px auto; display: block;" />
   <header>
-<img src="logo.png" alt="SkyShot Logo" class="logo" />
     <h1>SkyShot</h1>
     <p class="tagline">Track Every Shot. Improve Every Game.</p>
   </header>
-
-  <section class="hero">
-    <h2>Smart Basketball Shot Tracking</h2>
-    <p>Get real-time shot arc, release angle, and performance stats using SkyShot’s wearable tech.</p>
-    <a href="#" class="cta-button">Get Started</a>
-  </section>
-
-  <section class="features">
-    <h2>Features</h2>
-    <div class="feature">
-      <h3>🏀 Real-Time Shot Arc</h3>
-      <p>Analyze your shot’s arc and trajectory instantly.</p>
-    </div>
-    <div class="feature">
-      <h3>📈 Stats Dashboard</h3>
-      <p>View shot history, accuracy, and improvement over time.</p>
-    </div>
-    <div class="feature">
-      <h3>📱 Mobile + Web App</h3>
-      <p>Use SkyShot on any device, anytime, anywhere.</p>
-    </div>
-  </section>
+  <main>
+    <h2>Login / Sign Up</h2>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <br /><br />
+    <button onclick="handleSignup()">Sign Up</button>
+    <button onclick="handleLogin()">Login</button>
+    <p id="status"></p>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
