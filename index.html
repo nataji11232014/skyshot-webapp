@@ -4,23 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SkyShot</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <img src="assets/logo.png" alt="SkyShot Logo" style="height: 100px; margin: 20px auto; display: block;" />
   <header>
+    <img src="logo.png" alt="SkyShot Logo" class="logo" />
     <h1>SkyShot</h1>
     <p class="tagline">Track Every Shot. Improve Every Game.</p>
   </header>
+
   <main>
-    <h2>Login / Sign Up</h2>
-    <input type="email" id="email" placeholder="Email" />
-    <input type="password" id="password" placeholder="Password" />
-    <br /><br />
-    <button onclick="handleSignup()">Sign Up</button>
-    <button onclick="handleLogin()">Login</button>
-    <p id="status"></p>
+    <div id="auth">
+      <h2>Sign Up</h2>
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="password" id="signup-password" placeholder="Password" />
+      <button onclick="signup()">Sign Up</button>
+
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Password" />
+      <button onclick="login()">Login</button>
+
+      <p id="status"></p>
+    </div>
   </main>
-  <script type="module" src="main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.0"></script>
+  <script src="main.js"></script>
 </body>
 </html>
